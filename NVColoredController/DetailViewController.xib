@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="NVColoredController" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="7Bf-s5-dGP" id="jxt-jt-6jM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc7-hu-1Ym">
+                    <rect key="frame" x="277" y="116" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0092708704513445594" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="07s-wz-ZJi"/>
+                        <constraint firstAttribute="width" constant="46" id="KiJ-4o-BLN"/>
+                    </constraints>
+                    <state key="normal" title="RED"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="ZzC-fO-JGz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ny5-yP-num">
+                    <rect key="frame" x="267" y="196" width="66" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.20197837622697934" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="OAv-Nk-4dX"/>
+                        <constraint firstAttribute="height" constant="30" id="tbZ-ve-tpB"/>
+                    </constraints>
+                    <state key="normal" title="GREEN"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="egh-Iv-Kkl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtV-Zk-N63">
+                    <rect key="frame" x="277" y="276" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.094159942590108514" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gyr-TS-Ram"/>
+                        <constraint firstAttribute="width" constant="46" id="l3c-0R-VLv"/>
+                    </constraints>
+                    <state key="normal" title="BLUE"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="62J-b2-j2w"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bf-s5-dGP">
+                    <rect key="frame" x="279" y="45" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7Bf-s5-dGP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ctp-jh-Uj3"/>
+                <constraint firstItem="ny5-yP-num" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IO6-Nt-pwx"/>
+                <constraint firstItem="JtV-Zk-N63" firstAttribute="top" secondItem="ny5-yP-num" secondAttribute="bottom" constant="50" id="JUc-dn-FmV"/>
+                <constraint firstItem="Gc7-hu-1Ym" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WBU-Xj-xAr"/>
+                <constraint firstItem="Gc7-hu-1Ym" firstAttribute="top" secondItem="7Bf-s5-dGP" secondAttribute="bottom" constant="50" id="X3D-oh-y6A"/>
+                <constraint firstItem="JtV-Zk-N63" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XU5-c6-U1C"/>
+                <constraint firstItem="ny5-yP-num" firstAttribute="top" secondItem="Gc7-hu-1Ym" secondAttribute="bottom" constant="50" id="f3w-bl-z4e"/>
+                <constraint firstItem="7Bf-s5-dGP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="oOW-6e-Xqj"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
